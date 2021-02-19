@@ -1,0 +1,22 @@
+
+form{
+	justify-content: center;
+	margin-left: 6em;
+	margin-right: 6em;
+}
+
+table {
+		width:100%;
+		border-collapse:collapse;
+	}
+td,th{
+		padding:1em; border:#4e95f4 1px solid;
+	}
+	/* Define the default color for all the table rows */
+tr{
+		background: #b8d1f3;
+	}
+	/* Define the hover highlight color for the table row */
+  tr:hover {
+          background-color: #ffff99;
+    }

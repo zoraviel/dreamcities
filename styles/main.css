@@ -1,0 +1,166 @@
+HTML CSSResult Skip Results Iframe
+/* ==============================================================================================
+Nick Mkrtchyan
+http://www.facebook.com/sonick.pk
+http://www.Mkrtchyan.zz.mu
+================================================================================================= */
+
+#container{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.hero-tall {
+  position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 100vh;
+    min-height: 700px;
+
+}
+
+
+h1{
+  font-size: 8em;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: 'Monofett', cursive;
+}
+
+.cities{
+  position:absolute;
+  display: block;
+  padding: 3rem;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.link{
+  margin-left: 5em;
+
+}
+
+.smalltext{
+  font-size: 1.5em;
+  font-family: 'Roboto', sans-serif;
+  border-style: solid;
+  border-right-color: purple;
+  border-bottom-color: purple;
+  border-right-width: thick;
+  border-left-width: thin;
+  border-top-width: thin;
+  padding: 1.5rem;
+  text-align: justify;
+  border-radius: 2rem;
+  background-color: #C724B1;
+  color: #000000;
+  margin: 5rem;
+}
+
+a{
+  font-size: 3em;
+  max-height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+@keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-webkit-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-moz-keyframes move-clouds-back {
+    from {background-position:0 0;}
+    to {background-position:10000px 0;}
+}
+@-ms-keyframes move-clouds-back {
+    from {background-position: 0;}
+    to {background-position:10000px 0;}
+}
+
+.stars, .clouds {
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:100%;
+  display:block;
+  opacity:.7;
+  background-color: #000;
+}
+
+.stars {
+  background:#000 url(http://www.script-tutorials.com/demos/360/images/stars.png) repeat top center;
+  z-index:1;
+}
+
+
+
+
+
+
+.clouds{
+    background:#000 url(http://www.script-tutorials.com/demos/360/images/clouds3.png) repeat top center;
+    z-index:3;
+
+  -moz-animation:move-clouds-back 1200s linear infinite;
+  -ms-animation:move-clouds-back 1200s linear infinite;
+  -o-animation:move-clouds-back 1200s linear infinite;
+  -webkit-animation:move-clouds-back 1200s linear infinite;
+  animation:move-clouds-back 1200s linear infinite;
+}
+
+
+
+Resources1× 0.5× 0.25×Rerun
+
+
+@media screen and (max-width: 1000px) {
+  #container {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 700px) {
+#container{
+  width: 100%;
+}
+
+  h1 {
+    margin: 1rem;
+    font-size: 3rem;
+  }
+
+  .smalltext{
+    font-size: 1rem;
+  }
+
+  .link{
+    font-size: 1rem;
+  }
+
+form{
+  width: 100%;
+  margin: 1rem;
+  max-width: 100%;
+}
+
+}

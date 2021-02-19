@@ -10,51 +10,54 @@
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<title> Dream City Inventory </title>
 	<link rel="stylesheet" href="styles/main.css">
-	<link rel="stylesheet" href="styles/table.css">
+	<link rel="stylesheet" href="styles/tables.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Monofett&family=Roboto:wght@900&display=swap" rel="stylesheet">
 </head>
 
 <body>
 <div id="container">
 
+
+	<section class="hero-tall">
+
+  	<div class="stars"></div>
+  	<div class="clouds">
+
+
 <h1>Dream City Inventory</h1>
 
-<p class="middle"><a href="enter_new_record.php">Add a new city.</a></p>
+<p class="link"><a href="enter_new_record.php">Add a new city.</a></p>
 
 
 <!--
      the form below is handled by the PHP file named in the action= attribute
 -->
-<form class="smallform" method="post" action="city_edit.php" autocomplete="off">
+<form method="post" autocomplete="off">
 
-<table>
+<table class="tabletable-hover">
 	<!-- table column headings -->
+	<thread>
 	<tr>
-	  <th>City</th>
-	  <th>State or Country</th>
-	  <th>Why Move There?</th>
-	  <th>Dream Life or Job</th>
-	  <th>Starsign</th>
+	  <th scope="col">City</th>
+	  <th scope="col">State or Country</th>
+	  <th scope="col">Why Move There?</th>
+	  <th scope="col">Dream Life or Job</th>
+	  <th scope="col">Starsign</th>
 	</tr>
+</thread>
 
-<!-- Begin PHP while-loop to display database query results
-     with each row enclosed in TD tags.
-     Each time it loops, it writes ONE ROW.
-	 This code depends on the first 5 lines at the start of this file.
-	 $socks comes from that code.
-	 NOTE all form controls must have a name= attribute.
-     -->
+
 <?php while ($row = mysqli_fetch_assoc($info)) :  ?>
-
+<tbody>
 <tr>
-  <!-- notice how, above, the database record id becomes
-       the id and value of the radio button -->
   <td><?php echo stripslashes($row['city']); ?></td>
   <td><?php echo $row['stateorcountry']; ?></td>
   <td><?php echo $row['whymovethere']; ?></td>
   <td><?php echo $row['dreamjob']; ?></td>
   <td><?php echo $row['starsign']; ?></td>
 </tr><!-- end of HTML table row -->
-
+</tbody>
 <?php endwhile;  ?>
 <!-- end the PHP while-loop
      everything else on this page is normal HTML -->
@@ -65,7 +68,13 @@
 <!-- close the form -->
 </form>
 
-<p><a href="enter_new_record.php">Add a new city.</a></p>
+<p class="link"><a href="enter_new_record.php">Add a new city.</a></p>
+
+
+    </div>
+
+  </section>
+
 
 </div> <!-- close container -->
 </body>

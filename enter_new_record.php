@@ -4,13 +4,20 @@
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
     <title> Dream City - Enter </title>
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Monofett&family=Roboto:wght@900&display=swap" rel="stylesheet">
 </head>
 <body>
 <div id="container">
+  <section class="hero-tall">
+
+  	<div class="stars"></div>
+  	<div class="clouds">
+
 <h1>Enter a New City</h1>
-<p class="middle"><a href="inventory_update.php">View full inventory</a></p>
-<div id="cities">
+<p class="link"><a href="inventory_update.php">View full inventory</a></p>
+<div  class= "smalltext" id="cities">
 <!-- this form is handled by the JavaScript file linked at bottom -->
 <form id="citiesform" method="post" action="" autocomplete="off">
   <label for="city">City </label>
@@ -42,7 +49,10 @@
 <!-- close the form -->
 </div> <!-- close #socks -->
 <!-- empty div -->
-<div id="response"></div>
+<div class= "smalltext" id="response"> International dreams are more than welcome!</div>
+</div>
+
+</section>
 </div> <!-- close container -->
 <script src="js/enter.js"></script>
 </body>
